@@ -1,0 +1,93 @@
+#animationDiv{
+    display: grid;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    grid-template: repeat(12, 5vmin) / repeat(12, 5vmin);
+}
+section{
+    display: block;
+}
+#instructionDiv{
+    display: none;
+    width: 85%;
+    margin: 7.5%;
+    padding: 2rem;
+    border: 1px solid black;
+}
+
+#four78Circle{
+    background: radial-gradient(#adfa7f, #edfee2);
+    border: 1px solid white;
+    border-radius: 50%;
+    grid-area: 5 / 6 / span 2 / span 2;
+}
+button, #start{
+    grid-area: 11 / 2 / span 1 / span 4;
+}
+
+button, #stop{
+    grid-area: 11 / 8 / span 1 / span 4;
+}
+
+button, #instruction{
+    grid-area: 13 / 5 / span 1 / span 4;
+    background-color: chocolate;
+}
+
+.animate-scale{
+    animation: four78 19s ease-in-out infinite;
+}
+
+@keyframes four78{
+    0% {
+        transform: scale(1); border: 1px solid white;
+    }
+    20% {
+        border: 1px solid white;
+    }
+    21.05%{
+        transform: scale(4); border: 1px solid #ff7a7a;
+    }
+    57.8921053% {
+        transform: scale(4); border: 1px solid #ff7a7a;
+    }
+    65% {
+        border: 1px solid #ffbebe;
+    }
+    100% {
+        transform: scale(1); border: 1px solid white;
+    }
+}
+
+#timer1, #timer2, #timer3{
+    font-size: 2rem;
+    font-family: 'Unica One';
+    text-align: center;
+}
+
+@media only screen and (max-width: 550px){
+    #animationDiv{
+        display: grid;
+        height: 100%;
+        justify-content: center;
+        align-content: center;
+        grid-template: repeat(15, 8vmin) / repeat(12, 8vmin);
+    }
+    button{
+        font-size: 0.5rem;
+    }
+    
+    button, #start{
+        grid-area: 11 / 4 / span 1 / span 6;
+    }
+    
+    button, #stop{
+        grid-area: 13 / 4 / span 1 / span 6;
+    }
+    
+    button, #instruction{
+        grid-area: 15 / 4 / span 1 / span 6;
+        background-color: chocolate;
+    }
+}

@@ -1,0 +1,164 @@
+body{
+    background-color: cornflowerblue;
+}
+section{
+  
+  justify-content: center;
+}
+#instructionDiv{
+  display: none;
+  width: 85%;
+  margin: 7.5%;
+  padding: 2rem;
+  border: 1px solid black;
+}
+#box{
+  width: 60vmin;
+  height: 60vmin;
+  border: solid black 2px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  background-color: rgba(36, 246, 218, 0);
+}
+@keyframes ball {
+  0%    {top: 0; left: 0; background-color: white;}
+  24.5% {background-color: white;}
+  25%   {top: 0; left: calc(100% - 5vmin); background-color: red;}
+  49.5% {background-color: red;}
+  50%   {top: calc(100% - 5vmin); left: calc(100% - 5vmin); background-color: white;}
+  50.5% {background-color: white;}
+  74.5% {background-color: white;}
+  75%   {top: calc(100% - 5vmin); left: 0; background-color: red;}
+  100%  {top: 0; left: 0; background-color: red;}
+}
+.animate-color {
+  animation: breath 16s ease-in-out 4;
+}
+#ball {
+  width: 5vmin;
+  height: 5vmin;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  position: relative;
+  margin: 0;
+  z-index: 9;
+}
+@keyframes breath {
+      0% {background-color: rgba(36, 246, 218, 0.)}
+      25% {background-color: rgba(36, 246, 218, 1);}
+      50% {background-color: rgba(36, 246, 218, 1);}
+      75% {background-color: rgba(36, 246, 218, 0);}
+      100% {background-color: rgba(36, 246, 218, 0);}
+}
+
+.animate-ball {
+animation-name: ball;
+animation-duration: 16s;
+animation-iteration-count: 4;
+animation-timing-function: linear;
+}
+
+#start{
+  padding: 5px;
+  border: none;
+  border-radius: 2px;
+  background-color: lightskyblue;
+  text-align: center;
+  font-family: 'Unica One';
+  font-size: 1.25rem;
+  position: relative;
+  top: 10vmin;
+  left: 25vmin;
+}
+#instructionButton{
+  padding: 5px;
+  border: none;
+  border-radius: 2px;
+  background-color: chocolate;;
+  text-align: center;
+  font-family: 'Unica One';
+  font-size: 1.25rem;
+  position: relative;
+  top: 20vmin;
+  left: 12vmin;
+}
+
+#inhale{
+  position: relative;
+  display: none;
+
+}
+
+#hold{
+  position: relative;
+  display: none;
+}
+
+#exhale{
+  position: relative;
+  display: none;
+  
+}
+
+p{
+  font-family: 'Unica One';
+  font-size: 2rem;
+  color: #FFFFFF;
+  margin: auto;
+  padding: 0;
+}
+#guide{
+  width: 60vmin;
+  height: 15vmin;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+#instructionDiv{
+  display: none;
+}
+
+@media only screen and (max-width: 550px){
+  #box{
+    width: 80vmin;
+    height: 80vmin;
+    /* border: solid black 2px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    background-color: rgba(36, 246, 218, 0); */
+  }
+  #start{
+    width: 40vmin;
+    /* padding: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: lightskyblue;
+    text-align: center;
+    font-family: 'Unica One';
+    font-size: 1.25rem; */
+    position: relative;
+    top: 10vmin;
+    left: 20vmin;
+  }
+  #instructionButton{
+    width: 60%;
+    margin-left: 8%;
+    margin-top: 20%;
+    /* padding: 5px;
+    border: none;
+    border-radius: 2px;
+    background-color: chocolate;;
+    text-align: center;
+    font-family: 'Unica One';
+    font-size: 1.25rem; */
+    /* position: relative;
+    top: 20vmin;
+    left: -16vmin; */
+  }
+}

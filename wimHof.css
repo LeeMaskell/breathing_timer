@@ -1,0 +1,106 @@
+#wimDiv{
+    display: grid;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    grid-template: repeat(12, 5vmin) / repeat(12, 5vmin);
+}
+#wimCircle1{
+    background: radial-gradient(#6495ED, #FFFFFF);
+    border: 1px solid white;
+    border-radius: 50%;
+    grid-area: 5 / 6 / span 2 / span 2;
+}
+button, #start{
+    grid-area: 11 / 5 / span 1 / span 4;
+}
+button, #instruction{
+    grid-area: 13 / 5 / span 1 / span 4;
+    background-color: chocolate;
+}
+#longHold{
+    display: none;
+    font-size: 6rem;
+    font-family: 'Unica One';
+    text-align: center;  
+    margin-top: 10rem;
+}
+.animate-scale30 {
+    animation: wimHof 4s ease-in-out 30;
+}
+@keyframes wimHof {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(4)
+    }
+    60% {
+        transform: scale(4)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+#timer{
+    grid-area: 3 / 12 / span 1 / span 1;
+    font-size: 4rem;
+    font-family: 'Unica One';
+}
+#longTimer{
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Unica One';
+}
+#shortHold{
+    display: none;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    grid-template: repeat(12, 5vmin) / repeat(12, 5vmin);
+}
+#wimCircle2{
+    background: radial-gradient(#6495ED, #FFFFFF);
+    border: 1px solid white;
+    border-radius: 50%;
+    grid-area: 6 / 6 / span 2 / span 2;
+}
+#lastInhale{
+    font-size: 2rem;
+    font-family: 'Unica One';
+    display: none;
+    text-align: center;
+}
+.animate-scale15 {
+    animation: wim2 17s ease-in;
+}
+@keyframes wim2 {
+    0% {
+        transform: scale(1)
+    }
+    15% {
+        transform: scale(4)
+    }
+    25% {
+        transform: scale(4)
+    }
+    75% {
+        transform: scale(4)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+#inhaleHoldTimer{
+    font-size: 3rem;
+    font-family: 'Unica One';
+    text-align: center;
+}
+
+#instructionDiv{
+    display: none;
+    width: 85%;
+    margin: 7.5%;
+    padding: 2rem;
+    border: 1px solid black;
+}
