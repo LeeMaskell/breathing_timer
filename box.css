@@ -2,13 +2,12 @@ body{
     background-color: cornflowerblue;
 }
 section{
-  
   justify-content: center;
 }
 #instructionDiv{
   display: none;
   width: 85%;
-  margin: 7.5%;
+  margin: 4.5%;
   padding: 2rem;
   border: 1px solid black;
 }
@@ -19,7 +18,7 @@ section{
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
+  margin-top: 2.5%;
   background-color: rgba(36, 246, 218, 0);
 }
 @keyframes ball {
@@ -82,8 +81,10 @@ animation-timing-function: linear;
   font-family: 'Unica One';
   font-size: 1.25rem;
   position: relative;
-  top: 20vmin;
-  left: 12vmin;
+  top: 2.5vmin;
+  /* left: 12vmin; */
+  margin: auto;
+  display: block;
 }
 
 #inhale{
@@ -112,7 +113,7 @@ p{
 }
 #guide{
   width: 60vmin;
-  height: 15vmin;
+  height: 13.5vmin;
   margin-left: auto;
   margin-right: auto;
   display: flex;
