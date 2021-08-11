@@ -93,23 +93,41 @@ button, #instructionRes{
         grid-template: repeat(17, 8vmin) / repeat(12, 8vmin);
         margin-top: 15%;
     }
+    #start{
+        margin: 0;
+    }
     button{
         font-size: 0.5rem;
     }
     button, #oneMin{
         grid-area: 11 / 3 / span 1 / span 8;
+        line-height: 0%;
     }
     
     button, #twoMins{
         grid-area: 13 / 3 / span 1 / span 8;
+        line-height: 0%;
     }
     
     button, #stopRes{
         grid-area: 15 / 3 / span 1 / span 8;
+        line-height: 0%;
     }
     
     button, #instructionRes{
         grid-area: 17 / 3 / span 1 / span 8;
         background-color: chocolate;
+        line-height: 0%;
+    }
+    .homeButton{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 0;
+        line-height: 0%;
+    }
+    #close{
+        width: 80%;
+        margin: 10%;
     }
 }

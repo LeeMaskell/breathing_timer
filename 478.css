@@ -67,6 +67,7 @@ button, #instruction{
     font-size: 2rem;
     font-family: 'Unica One';
     text-align: center;
+    color: #C5C6C7;
 }
 
 @media only screen and (max-width: 550px){
@@ -92,5 +93,10 @@ button, #instruction{
     button, #instruction{
         grid-area: 15 / 4 / span 1 / span 6;
         background-color: chocolate;
+    }
+    
+    #close{
+        width: 80%;
+        margin: 10%;
     }
 }

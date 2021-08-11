@@ -83,7 +83,8 @@ animation-timing-function: linear;
   position: relative;
   top: 2.5vmin;
   /* left: 12vmin; */
-  margin: auto;
+  width: 80%;
+  margin: 0 10% 0 10%;
   display: block;
 }
 
@@ -118,6 +119,7 @@ p{
   margin-right: auto;
   display: flex;
   justify-content: center;
+  color: black;
 }
 #instructionDiv{
   display: none;
@@ -148,18 +150,14 @@ p{
     left: 20vmin;
   }
   #instructionButton{
-    width: 60%;
-    margin-left: 8%;
-    margin-top: 20%;
-    /* padding: 5px;
-    border: none;
-    border-radius: 2px;
-    background-color: chocolate;;
-    text-align: center;
-    font-family: 'Unica One';
-    font-size: 1.25rem; */
-    /* position: relative;
-    top: 20vmin;
-    left: -16vmin; */
+    width: 80%;
+    margin: 0 10% 20% 10%;
+  }
+  #guide{
+    margin-top: 15%;
+  }
+  #close{
+    width: 80%;
+    margin: 10% 10% 10% 10%;
   }
 }
