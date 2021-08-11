@@ -16,6 +16,10 @@ body{
     height: 10%;
     margin-top: 2%;
     margin-bottom: 2%;
+    color: black;
+}
+.navButton:active{
+    background-color: black;
 }
 
 .aboutButton{
@@ -28,23 +32,23 @@ body{
     background-color: blue;
     border: 1px solid black;
 }
+.aboutButton:active{
+    background-color: black;
+}
 
 @media only screen and (max-width: 770px) {
     .navButton{
         width: 80%;
         font-size: 2rem;
         height: 12%;
-        /* margin-top: 2%;
-        margin-bottom: 2%; */
+
     }
     .aboutButton{
         width: 80%;
         font-size: 2rem;
         height: 12%;
-        /* margin-top: 2%;
-        margin-bottom: 2%;
         color: black;
-        background-color: blue;
+        /* background-color: blue;
         border: 1px solid black; */
     }
 }
