@@ -39,7 +39,7 @@ img{
     top: 25%;
     left: 25%;
 }
-#resCircle{
+#res-circle{
     background: radial-gradient(circle, rgba(186,252,251,1) 0%, rgba(81,241,255,1) 85%);
     border: 1px solid white;
     border-radius: 50%;
@@ -66,19 +66,19 @@ img{
     }
 }
 
-button, #oneMin{
+button, #one-min{
     grid-area: 11 / 2 / span 1 / span 4;
 }
 
-button, #twoMins{
+button, #two-mins{
     grid-area: 11 / 8 / span 1 / span 4;
 }
 
-button, #stopRes{
+button, #stop-res{
     grid-area: 13 / 2 / span 1 / span 4;
 }
 
-button, #instructionRes{
+button, #instruction-res{
     grid-area: 13 / 8 / span 1 / span 4;
     background-color: chocolate;
 }
@@ -99,35 +99,36 @@ button, #instructionRes{
     button{
         font-size: 0.5rem;
     }
-    button, #oneMin{
+    button, #one-min{
         grid-area: 11 / 3 / span 1 / span 8;
         line-height: 0%;
     }
     
-    button, #twoMins{
+    button, #two-mins{
         grid-area: 13 / 3 / span 1 / span 8;
         line-height: 0%;
     }
     
-    button, #stopRes{
+    button, #stop-res{
         grid-area: 15 / 3 / span 1 / span 8;
         line-height: 0%;
     }
     
-    button, #instructionRes{
+    button, #instruction-res{
         grid-area: 17 / 3 / span 1 / span 8;
         background-color: chocolate;
         line-height: 0%;
     }
-    .homeButton{
+    .home-button{
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
         margin-top: 0;
-        line-height: 0%;
+        line-height: 1rem;
     }
     #close{
         width: 80%;
         margin: 10%;
+        line-height: 1rem;
     }
 }

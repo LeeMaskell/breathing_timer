@@ -48,10 +48,10 @@ let inhaleTimer3 = () => {
 }
 
 const runOnce = () => {
-    console.log('runOnce');
+    console.log('run once');
         inhaleTimer();
         counter1 = setInterval(inhaleTimer, 1000); // sets the first loop to increment the counter every 1 second
-        document.getElementById('four78Circle').classList.add("animate-scale");
+        document.getElementById('four78-circle').classList.add("animate-scale");
         setTimeout(() => { // the following 3 setTimeouts remove the text and counter once the timer for that section is complete
             document.getElementById("timer1").innerHTML = "";
         }, 4000);
@@ -81,7 +81,7 @@ let instructions = document.getElementById("instruction");
 
 const loadInstructions = () => {
     document.querySelector("section").style.display = "none";
-    document.getElementById("instructionDiv").style.display = "block";
+    document.getElementById("instruction-div").style.display = "block";
 };
 
 instructions.addEventListener('click', loadInstructions);
@@ -92,7 +92,7 @@ let removeInstructions = document.getElementById("close");
 
 const closeInstructions = () => {
     document.querySelector("section").style.display = "block";
-    document.getElementById("instructionDiv").style.display = "none";
+    document.getElementById("instruction-div").style.display = "none";
 };
 
 removeInstructions.addEventListener('click', closeInstructions);

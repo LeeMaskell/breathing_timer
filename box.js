@@ -42,11 +42,11 @@ boxStart.addEventListener('click', function(){
 });
 
 // instructions functionality
-let instructions = document.getElementById("instructionButton");
+let instructions = document.getElementById("instruction-button");
 
 const loadInstructions = () => {
     document.querySelector("section").style.display = "none";
-    document.getElementById("instructionDiv").style.display = "block";
+    document.getElementById("instruction-div").style.display = "block";
 };
 
 instructions.addEventListener('click', loadInstructions);
@@ -57,7 +57,7 @@ let removeInstructions = document.getElementById("close");
 
 const closeInstructions = () => {
     document.querySelector("section").style.display = "block";
-    document.getElementById("instructionDiv").style.display = "none";
+    document.getElementById("instruction-div").style.display = "none";
 };
 
 removeInstructions.addEventListener('click', closeInstructions);

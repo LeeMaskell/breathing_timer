@@ -1,11 +1,11 @@
-#wimDiv{
+#wim-div{
     display: grid;
     height: 100%;
     justify-content: center;
     align-content: center;
     grid-template: repeat(12, 5vmin) / repeat(12, 5vmin);
 }
-#wimCircle1{
+#wim-circle1{
     background: radial-gradient(#6495ED, #FFFFFF);
     border: 1px solid white;
     border-radius: 50%;
@@ -15,12 +15,11 @@ button, #start{
     grid-area: 11 / 4 / span 2 / span 7;
 }
 button, #instruction{
-    /* grid-area: 13 / 5 / span 1 / span 4; */
     background-color: chocolate;
     width: 80%;
-    margin: 5% 10% 0 10%;
+    margin: 1% 10% 0 10%;
 }
-#longHold{
+#long-hold{
     display: none;
     font-size: 2rem;
     font-family: 'Unica One';
@@ -50,25 +49,25 @@ button, #instruction{
     font-family: 'Unica One';
     color: #C5C6C7;
 }
-#longTimer{
+#long-timer{
     text-align: center;
     font-size: 6rem;
     font-family: 'Unica One';
 }
-#shortHold{
+#short-hold{
     display: none;
     height: 100%;
     justify-content: center;
     align-content: center;
     grid-template: repeat(12, 5vmin) / repeat(12, 5vmin);
 }
-#wimCircle2{
+#wim-circle2{
     background: radial-gradient(#6495ED, #FFFFFF);
     border: 1px solid white;
     border-radius: 50%;
     grid-area: 6 / 6 / span 2 / span 2;
 }
-#lastInhale{
+#last-inhale{
     font-size: 2rem;
     font-family: 'Unica One';
     display: none;
@@ -94,13 +93,13 @@ button, #instruction{
         transform: scale(1)
     }
 }
-#inhaleHoldTimer{
+#inhale-hold-timer{
     font-size: 3rem;
     font-family: 'Unica One';
     text-align: center;
 }
 
-#instructionDiv{
+#instruction-div{
     display: none;
     width: 85%;
     margin: 7.5%;

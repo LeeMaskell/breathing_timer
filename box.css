@@ -4,7 +4,7 @@ body{
 section{
   justify-content: center;
 }
-#instructionDiv{
+#instruction-div{
   display: none;
   width: 85%;
   margin: 7.5%;
@@ -72,7 +72,7 @@ animation-timing-function: linear;
   top: 10vmin;
   left: 25vmin;
 }
-#instructionButton{
+#instruction-button{
   padding: 5px;
   border: none;
   border-radius: 2px;
@@ -82,7 +82,6 @@ animation-timing-function: linear;
   font-size: 1.25rem;
   position: relative;
   top: 2.5vmin;
-  /* left: 12vmin; */
   width: 80%;
   margin: 0 10% 0 10%;
   display: block;
@@ -102,7 +101,6 @@ animation-timing-function: linear;
 #exhale{
   position: relative;
   display: none;
-  
 }
 
 p{
@@ -121,7 +119,7 @@ p{
   justify-content: center;
   color: black;
 }
-#instructionDiv{
+#instruction-div{
   display: none;
 }
 
@@ -129,27 +127,14 @@ p{
   #box{
     width: 80vmin;
     height: 80vmin;
-    /* border: solid black 2px;
-    border-radius: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15%;
-    background-color: rgba(36, 246, 218, 0); */
   }
   #start{
     width: 40vmin;
-    /* padding: 5px;
-    border: none;
-    border-radius: 2px;
-    background-color: lightskyblue;
-    text-align: center;
-    font-family: 'Unica One';
-    font-size: 1.25rem; */
     position: relative;
     top: 10vmin;
     left: 20vmin;
   }
-  #instructionButton{
+  #instruction-button{
     width: 80%;
     margin: 0 10% 20% 10%;
   }

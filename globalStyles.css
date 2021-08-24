@@ -35,7 +35,6 @@ h2{
 p{
     font-family: 'Montserrat';
     font-size: 1.5rem;
-    /* border: 1px solid black; */
     padding: 1rem;
     color: #C5C6C7;
 }
@@ -62,7 +61,6 @@ button{
     border: none;
     border-radius: 2px;
     background-color: #45A29E;
-    /* background-color: #41EBFF; */
     text-align: center;
     font-family: 'Unica One';
     font-size: 1.25rem;
@@ -74,11 +72,10 @@ button:active{
     background-color: black;
     box-shadow: 0px 0px;
 }
-.homeButton{
+.home-button{
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
 }
 
-@media only screen and (max-width: 770px)

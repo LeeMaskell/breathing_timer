@@ -2,14 +2,14 @@
 let startWim = document.getElementById('start');
 
 const removeClassWim = () => {
-    document.getElementById('wimCircle1').classList.remove("animate-scale30");
+    document.getElementById('wim-circle1').classList.remove("animate-scale30");
 }
 let count = 0;
 let inhaleTimer = () => {
     count= count+1;
     if (count >30){
         clearInterval(counter);
-        document.getElementById("wimDiv").style.display = "none";
+        document.getElementById("wim-div").style.display = "none";
         return;
     }
     document.getElementById('timer').innerHTML = count;
@@ -22,10 +22,10 @@ let exhaleHold = () => {
         clearInterval(counter2);
         return;
     }
-    document.getElementById('longTimer').innerHTML = count2;
+    document.getElementById('long-timer').innerHTML = count2;
 }
 let exhale = () => {
-    document.getElementById("longHold").style.display = "block";
+    document.getElementById("long-hold").style.display = "block";
 }
 let hold = () => {
     setInterval(exhaleHold, 1000);
@@ -33,11 +33,11 @@ let hold = () => {
 
 // timing function for 'inhale and hold' - 15 secs
 let shortHold = () => {
-    document.getElementById("longHold").style.display = "none";
-    document.getElementById("longTimer").style.display = "none";
-    document.getElementById("shortHold").style.display = "grid";
-    document.getElementById("lastInhale").style.display = "block";
-    document.getElementById('wimCircle2').classList.add("animate-scale15");
+    document.getElementById("long-hold").style.display = "none";
+    document.getElementById("long-timer").style.display = "none";
+    document.getElementById("short-hold").style.display = "grid";
+    document.getElementById("last-inhale").style.display = "block";
+    document.getElementById('wim-circle2').classList.add("animate-scale15");
     setInterval(inhaleHoldTimer, 1000);
 }
 let count3 = 0;
@@ -47,7 +47,7 @@ let inhaleHoldTimer = () => {
         clearInterval(counter3);
         return;
     }
-    document.getElementById('inhaleHoldTimer').innerHTML = count3;
+    document.getElementById('inhale-hold-timer').innerHTML = count3;
 }
 let end = () => {
     document.querySelector("section").style.display = "none";
@@ -62,7 +62,7 @@ const threeRounds = () => {
     removeClassWim();
     inhaleTimer();
     counter = setInterval(inhaleTimer, 4000);
-    document.getElementById('wimCircle1').classList.add("animate-scale30");
+    document.getElementById('wim-circle1').classList.add("animate-scale30");
     setTimeout(removeClassWim, 120000);
     setTimeout(exhale, 120000);
     setTimeout(hold, 120000);
@@ -81,7 +81,7 @@ let instructions = document.getElementById("instruction");
 
 const loadInstructions = () => {
     document.querySelector("section").style.display = "none";
-    document.getElementById("instructionDiv").style.display = "block";
+    document.getElementById("instruction-div").style.display = "block";
 };
 
 instructions.addEventListener('click', loadInstructions);
@@ -92,7 +92,7 @@ let removeInstructions = document.getElementById("close");
 
 const closeInstructions = () => {
     document.querySelector("section").style.display = "block";
-    document.getElementById("instructionDiv").style.display = "none";
+    document.getElementById("instruction-div").style.display = "none";
 };
 
 removeInstructions.addEventListener('click', closeInstructions);
